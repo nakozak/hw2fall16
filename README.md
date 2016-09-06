@@ -1,7 +1,7 @@
-HW2 Fall 2015
+HW2 Fall 2016
 ===
 
-Skeleton code and sanity specs for homework 2, fall 2015
+Skeleton code and sanity specs for homework 2, fall 2016
 
 Skeleton Code
 =============
