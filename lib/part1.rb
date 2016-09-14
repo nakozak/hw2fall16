@@ -25,11 +25,16 @@
 #instructions specified in the assignment description to hand-in your work.
 
 def palindrome?(str)
-  # YOUR CODE HERE
+  str.downcase!
+  str = str.gsub(/[\W]/,'')
+  str == str.reverse
 end
 
 def count_words(str)
-  # YOUR CODE HERE
+  words = str.downcase.split(' ')
+  count = Hash.new(0)
+  words.each{|word| count[word]+=1}
+  return count
 end
 
 
@@ -54,6 +59,19 @@ else
   puts test_str + " is NOT a palindrome!"
 end
 
+test_str = "Madam"
+if palindrome? test_str
+  puts test_str + " is a palindrome!"
+else
+  puts test_str + " is NOT a palindrome!"
+end
+
+test_str = "Are we not pure? “No sir!” Panama’s moody Noriega brags. “It is garbage!” Irony dooms a man; a prisoner up to new era."
+if palindrome? test_str
+  puts test_str + " is a palindrome!"
+else
+  puts test_str + " is NOT a palindrome!"
+end
 
 test_str = "The rent is due on the first day of the month unless the first day of the month falls on a Saturday or Sunday"
 
