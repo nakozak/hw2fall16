@@ -37,16 +37,3 @@ end
 def rps_tournament_winner(tournament)
   rps_game_winner(tournament)
 end
-
-tournament=[
-[
- [ ["Joe", "P"], ["Mary", "S"] ],
- [ ["Bob", "R"], ["Alice", "S"] ]
-],
-[
- [ ["Steve", "S"], ["Jane", "P"] ],
- [ ["Ted", "R"], ["Carol", "P"] ]
-]
-]
-
-puts rps_tournament_winner(tournament)
