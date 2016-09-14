@@ -9,10 +9,3 @@ class CartesianProduct
       @a.each{ |x| @b.each { |y| yield [x,y] } }
     end
   end
-
-
-c = CartesianProduct.new([:a,:b], [4,5]) 
-c.each { |selt| puts selt.inspect }
-
-c = CartesianProduct.new([:a,:b], [])
-c.each { |selt| puts selt.inspect }
