@@ -24,14 +24,3 @@ end
 class Foo
 	attr_accessor_with_history :bar
 end
-
-f = Foo.new
-f.bar = 1
-f.bar = 2
-print f.bar_history
-f = Foo.new
-f.bar = 4
-print f.bar_history
-f = Foo.new
-print f.bar_history
-
